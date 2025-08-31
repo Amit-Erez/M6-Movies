@@ -16,7 +16,6 @@ const query = searchParams.get("query");
 
 async function getMovies(entry) {
 if (!entry) return;
-// only trigger skeletons if we’re already on Results page
 if (!showSpinner) setLoading(true);
 
 try {
